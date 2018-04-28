@@ -100,9 +100,17 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
   uint64_t fee, uint64_t& reward, int64_t& emissionChange) const {
   assert(alreadyGeneratedCoins <= m_moneySupply);
   assert(m_emissionSpeedFactor > 0 && m_emissionSpeedFactor <= 8 * sizeof(uint64_t));
-
-  uint64_t baseReward = (m_moneySupply - alreadyGeneratedCoins) >> m_emissionSpeedFactor;
-
+  
+  if(alreadyGeneratedCoins <= 864000000000) {
+    uint64_t baseReward = 10000000 
+  } else if(alreadyGeneratedCoins <= 1382400000000) {
+    uint64_t baseReward = 3000000
+  } else if(alreadyGeneratedCoins <= 1641600000000) {
+    uint64_t baseReward = 1000000
+  } else {
+    uint64_t baseReward = 100000
+  }
+  
   medianSize = std::max(medianSize, m_blockGrantedFullRewardZone);
   if (currentBlockSize > UINT64_C(2) * medianSize) {
     logger(TRACE) << "Block cumulative size is too big: " << currentBlockSize << ", expected less than " << 2 * medianSize;
