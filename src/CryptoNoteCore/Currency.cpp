@@ -102,13 +102,13 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
   assert(m_emissionSpeedFactor > 0 && m_emissionSpeedFactor <= 8 * sizeof(uint64_t));
   
   if(alreadyGeneratedCoins <= 864000000000) {
-    uint64_t baseReward = 10000000 
+    uint64_t baseReward = 10000000; 
   } else if(alreadyGeneratedCoins <= 1382400000000) {
-    uint64_t baseReward = 3000000
+    uint64_t baseReward = 3000000;
   } else if(alreadyGeneratedCoins <= 1641600000000) {
-    uint64_t baseReward = 1000000
+    uint64_t baseReward = 1000000;
   } else {
-    uint64_t baseReward = 100000
+    uint64_t baseReward = 100000;
   }
   
   medianSize = std::max(medianSize, m_blockGrantedFullRewardZone);
