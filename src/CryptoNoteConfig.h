@@ -106,8 +106,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 
 //TODO Add here your network seed nodes
 const std::initializer_list<const char*> SEED_NODES = {
-  "www.seedone.guildaero.space:18770",
-  "www.seddtwo.guildaero.space:18770",
+  "seedone.guildaero.space:18770",
+  "seedtwo.guildaero.space:18770",
 };
 
 struct CheckpointData {
