@@ -35,7 +35,7 @@ const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 0;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = 1000;
+const uint64_t MINIMUM_FEE                                   = 100;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
@@ -108,6 +108,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 const std::initializer_list<const char*> SEED_NODES = {
   "seedone.guildaero.space:18770",
   "seedtwo.guildaero.space:18770",
+  "seedthree.guildaero.space:18770",
 };
 
 struct CheckpointData {
