@@ -1,3 +1,5 @@
+## Welcome To Guildcoin!
+
 Ever wanted a massive number of internet coins? Dreamt of betting your friend 100Billion that they couldn't 1v1 you in the jungle? Wanted to just throw big numbers around to feel rich? Enter: Guildcoin.
 
 Guildcoin has an exaggerated payout scheme that leads to bank acounts flush with zeros. Payouts are as follows:
