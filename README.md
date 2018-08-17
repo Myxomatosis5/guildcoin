@@ -3,8 +3,11 @@ Ever wanted a massive number of internet coins? Dreamt of betting your friend 10
 Guildcoin has an exaggerated payout scheme that leads to bank acounts flush with zeros. Payouts are as follows:
 
 Blocks 1-86,400         | 10,000,000 GLP
+
 Blocks 86,401-259,200   | 3,000,000 GLP
+
 Blocks 259,201-518,400  | 1,000,000 GLP
+
 Blocks 518,401+         | 100,000 GLP
 
 
